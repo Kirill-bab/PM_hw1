@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task1_1
     {
-        public static void CalculateValue()
+        public static void Main(string[] args)
         {
             double a, b = 2001, c = 3, d = 20, result;
             Console.WriteLine("Created by Killreal \n \n");
