@@ -26,6 +26,7 @@ namespace HW1
             Console.WriteLine("> type \"paper\" to throw the paper");
             Console.WriteLine("> type \"scissors\" to throw the scissors");
             Console.WriteLine("> type \"exit\" to exit the game\n");
+            Console.WriteLine("> There is a hidden figure you can throw. To find it check out the code\n");
 
             Console.WriteLine("2. Balance: ");
             Console.WriteLine("- rock wins scissors but loses to paper");
