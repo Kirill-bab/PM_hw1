@@ -233,7 +233,7 @@ namespace HW1
                     wrongInput = true;
                 }
                 if(!wrongInput)
-                Console.WriteLine($"{input} = {Math.Round(result)}");
+                Console.WriteLine($"{input} = {Math.Round(result,3)}");
                 if (cmdMode) return 0;
             }
             return 0;
