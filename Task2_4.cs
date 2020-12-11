@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task2_4
     {
-        public static void MoreLess()
+        public static void Main(string[] args)
         {
             Console.WriteLine("Created by Killreal \n");
             Console.WriteLine($"This program is a realization of the \"More or Less\" game\n\n");
