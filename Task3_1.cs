@@ -11,7 +11,7 @@ namespace HW1
         public static int Calculate(string[] args)
         {
             bool cmdMode = false;
-            if (args != null) cmdMode = true;
+            if (args != null && args.Length > 0) cmdMode = true;
 
             if (!cmdMode)
             {
