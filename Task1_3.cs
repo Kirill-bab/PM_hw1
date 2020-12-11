@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task1_3
     {
-        public static void RowSum()
+        public static void Main(string[] args)
         {
             double epsilon = 1.0 / 2001;
             double sum = 0, element;
