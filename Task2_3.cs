@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task2_3
     {
-        public static int Run(string[] args)
+        public static int Main(string[] args)
         {
             if (args != null && args.Length > 0)
             {
