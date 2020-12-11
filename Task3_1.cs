@@ -8,7 +8,7 @@ namespace HW1
     class Task3_1
     {
 
-        public static int Calculate(string[] args)
+        public static int Main(string[] args)
         {
             bool cmdMode = false;
             if (args != null && args.Length > 0) cmdMode = true;
