@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task1_4
     {
-        public static void FindSimpleNumbers()
+        public static void Main(string[] args)
         {
             Console.WriteLine("Created by Killreal \n");
             Console.WriteLine("This program shows all simple numbers on the entered segment\n\n");
