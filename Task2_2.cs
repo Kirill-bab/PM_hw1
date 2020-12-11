@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task2_2
     {
-        public static int CountArea(string[] args)
+        public static int Main(string[] args)
         {
             double area = 0;
 
