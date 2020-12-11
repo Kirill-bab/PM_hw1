@@ -8,7 +8,7 @@ namespace HW1
     class Task3_1
     {
 
-        public static int Main(string[] args)
+        public static int Calculate(string[] args)
         {
             bool cmdMode = false;
             if (args != null && args.Length > 0) cmdMode = true;
@@ -31,7 +31,7 @@ namespace HW1
                 bool firstNegative = false, secondNegative = false, exit = false, help = false, wrongInput = false;
                 int index = 0;
 
-                string rightValues = "1234567890+-/pow^*%x&|!";
+                string rightValues = "1,234567890+-/pow^*%x&|!";
                 string operation = "";
                 string input = "";
 
@@ -80,7 +80,7 @@ namespace HW1
 
                                     if (input.Length < 2) throw new ArgumentOutOfRangeException(nameof(input));
 
-                                    for (;i < input.Length && Double.TryParse(input[i].ToString(), out tmp); i++)
+                                    for (;i < input.Length && (Double.TryParse(input[i].ToString(), out tmp) || input[i] == ','); i++)
                                     {
                                         str1 += input[i].ToString();
                                     }
@@ -103,7 +103,7 @@ namespace HW1
                         }
                         if (operation == "!a") break;
 
-                        for (;index < input.Length && Double.TryParse(input[index].ToString(), out tmp) ; index++)
+                        for (;index < input.Length && (Double.TryParse(input[index].ToString(), out tmp) || input[index] == ','); index++)
                         {
                             str1 += input[index].ToString();
                         }
@@ -147,7 +147,7 @@ namespace HW1
                             index++;
                         }
 
-                        for (; index < input.Length && Double.TryParse(input[index].ToString(), out tmp) ; index++)
+                        for (; index < input.Length && (Double.TryParse(input[index].ToString(), out tmp) || input[index] == ','); index++)
                         {
                             str2 += input[index].ToString();
                         }
@@ -220,6 +220,8 @@ namespace HW1
                             case "|":
                                 result = (int)first | (int)second;
                                 break;
+                            case "a": result = first;
+                                break;
                             default: throw new OverflowException();
                         }
                     }
@@ -231,7 +233,7 @@ namespace HW1
                     wrongInput = true;
                 }
                 if(!wrongInput)
-                Console.WriteLine($"{input} = {result}");
+                Console.WriteLine($"{input} = {Math.Round(result)}");
                 if (cmdMode) return 0;
             }
             return 0;
@@ -253,4 +255,5 @@ namespace HW1
 
     }
 }
+
 
