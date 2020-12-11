@@ -48,6 +48,7 @@ namespace HW1
                         {
                             Console.WriteLine("Enter expression:");
                             input = Console.ReadLine().Trim().Replace(" ", "");
+                            if (input.Length == 0) throw new ArgumentOutOfRangeException(nameof(input));
                         }
                         else input = String.Join("",args);
                         string str1 = "", str2 = "";
