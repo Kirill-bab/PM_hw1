@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task2_1
     {
-        public static void Game()
+        public static void Main(string[] args)
         {
             List<int> games = new List<int>(10);
             bool wrongAnswer, exitGame = false;
