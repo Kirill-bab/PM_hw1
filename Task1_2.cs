@@ -6,7 +6,7 @@ namespace HW1
 {
     class Task1_2
     {
-       public static void MarginCalculate()
+       public static void Main(string[] args)
         {
             double p1, p2, x, margin;
             double pp1, pp2, px;
